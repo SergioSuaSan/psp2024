@@ -1,0 +1,33 @@
+package leerEscribirBytes;
+
+import java.io.*;
+
+public class Lectura_Escritura {
+	
+	public static void main(String[] args) {
+		
+		int contador = 0;
+		
+		try {
+			FileInputStream archivo_lectura = new FileInputStream("C:\\Users\\diurno\\Desktop\\eclipseDEVELOPER-java-2024-09-R-win32-x86_64\\Descargas\\images.jpg");
+			
+			boolean final_ar=false;
+			
+			while (!final_ar) {
+				int byte_entrada = archivo_lectura.read();
+				
+				if (byte_entrada ==-1) {
+					final_ar = true;
+				}
+				
+				System.out.println(byte_entrada);
+				
+				contador ++;
+			}
+			archivo_lectura.close();
+		} catch (IOException e) {}
+		System.out.println(contador);
+		
+	}
+
+}
