@@ -1,0 +1,3 @@
+ddir
+date /T
+tasklist
