@@ -1,0 +1,10 @@
+package psp_2024.ZZZ.PRUEBAS.practica_cmd;
+
+public class SolucionFicheroaComando {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

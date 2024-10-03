@@ -1,0 +1,15 @@
+ El volumen de la unidad C no tiene etiqueta.
+ El n£mero de serie del volumen es: 5C97-0C26
+
+ Directorio de C:\Users\diurno\eclipse-workspace\psp_2024
+
+03/10/2024  08:26    <DIR>          .
+26/09/2024  10:22    <DIR>          ..
+16/09/2024  09:09               396 .classpath
+16/09/2024  09:09               384 .project
+16/09/2024  09:09    <DIR>          .settings
+03/10/2024  09:39    <DIR>          bin
+03/10/2024  09:40                 0 salida.txt
+16/09/2024  09:14    <DIR>          src
+               3 archivos            780 bytes
+               5 dirs  631.181.103.104 bytes libres

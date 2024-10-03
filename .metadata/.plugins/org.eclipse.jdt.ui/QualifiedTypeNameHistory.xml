@@ -16,6 +16,10 @@
     <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.File"/>
-    <fullyQualifiedTypeName name="java.lang.ProcessBuilder"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.ProcessBuilder.Redirect"/>
+    <fullyQualifiedTypeName name="java.lang.ProcessBuilder"/>
+    <fullyQualifiedTypeName name="java.io.OutputStream"/>
+    <fullyQualifiedTypeName name="psp_2024.ZZZ.PRUEBAS.practica_cmd.Auxiliar"/>
+    <fullyQualifiedTypeName name="psp_2024.ZZZ.PRUEBAS.practica_cmd.MetodosAuxiliares"/>
 </qualifiedTypeNameHistroy>
