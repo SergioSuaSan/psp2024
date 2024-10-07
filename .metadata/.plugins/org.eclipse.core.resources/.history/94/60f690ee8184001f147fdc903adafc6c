@@ -1,0 +1,20 @@
+package psp_2024.procesos.EJEMPLOS_LIBRO_TEXTO;
+
+import java.io.IOException;
+
+public class EjercicioLeerNombre {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String clase = "psp_2024.procesos.EJEMPLOS_LIBRO_TEXTO.LeerNombre";
+		ProcessBuilder pb = new ProcessBuilder("java", "-cp", ".\\bin", clase, "Funciona por favor");
+		try {
+			Process p = pb.start();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}
