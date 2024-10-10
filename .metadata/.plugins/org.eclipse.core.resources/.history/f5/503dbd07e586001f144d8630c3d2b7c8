@@ -1,0 +1,22 @@
+package psp_2024.procesos.mayor;
+
+public class Mayor {
+
+	private static int elMayor(int x, int y) {
+		if(x>y) return x;
+		else return y;
+	}
+	
+	public static void main(String[] args) {
+    
+	if (args.length == 2) {	
+	int x = Integer.valueOf(args[0]);
+    int y = Integer.valueOf(args[1]);
+    int resultado = elMayor(x,y);
+    System.out.println(resultado);
+	}
+	}
+
+
+
+}
