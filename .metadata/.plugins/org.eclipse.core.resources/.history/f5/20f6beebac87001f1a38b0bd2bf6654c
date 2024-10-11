@@ -17,10 +17,6 @@ public class PrimosEntreSi_1 {
 	
 	}
 
-	/*
-	 * Metodo que hace que si el resto de dividir el primer numero entre el segundo es distinto de 0 y viceversa, 
-	 * retorna true.
-	 */
 	static boolean sonPrimos(int x, int y) {
 		boolean res = false;
 		if(x % y != 0 && y % x != 0 ) {	

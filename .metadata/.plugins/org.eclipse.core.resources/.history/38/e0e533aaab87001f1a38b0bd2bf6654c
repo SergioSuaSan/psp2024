@@ -47,7 +47,7 @@ public class CrearProcesoSumar {
 			
 		//Asignación del directorio de trabajo que permita al anterior proceso encontrar
 		//los ejecutables que necesita
-		pb.directory(new File(".\\bin"));
+		pb.directory(new File("C:\\Users\\Eugenio\\eclipse-workspace_java\\psp_2024\\bin"));
         
 		//Escritura del resultado mediante redirectOutput
 		//pb.redirectOutput(ProcessBuilder.Redirect.INHERIT); //redirección a salida estándar: pantalla --> aquí no tiene efecto

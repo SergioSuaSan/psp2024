@@ -31,7 +31,7 @@ public class CrearProcesoMayor {
 		//pb.directory(new File("C:\\Users\\Eugenio\\eclipse-workspace_java\\psp_2024\\bin"));
 		pb.redirectOutput(new File(this.fich));
 		
-		pb.redirectError(new File(".\\src\\psp_2024\\procesos\\mayor\\error1.txt"));
+		pb.redirectError(new File(".\\psp_2024\\src\\psp_2024\\procesos\\mayor\\error1.txt"));
 		try {
 			this.p = pb.start();
 		} catch (IOException e) {
