@@ -35,15 +35,16 @@ public class CrearProcesoVocales {
 		
 		//Variables String para la clase, el carácter y el fichero que se utilizan
 		//en el constructor de ProcessBuilder
-		String clase = "psp_2024.ZZZ.PRUEBAS.prueba_vocales";
-		String letra = String.valueOf(this.vocal);
-		String archivo = String.valueOf(this.fichero);
-		
+		String clase = "psp_2024.ZZZ.PRUEBAS.prueba_vocales.Vocales";
+		String letra = String.valueOf(vocal);
+		String archivo = fichero.getAbsolutePath();
+//		System.out.println(fichero);
+//		System.out.println(archivo);
 		//Construcción del proceso (se usa el método directory pero se puede usar la
 		//classpath.
-		ProcessBuilder pb = new ProcessBuilder("java",/* "-cp", ".\\bin",*/ clase, letra, archivo);
+		ProcessBuilder pb = new ProcessBuilder("java","-cp", ".\\bin", clase, letra, archivo);
 		
-		pb.directory(new File(".\\bin"));
+//		pb.directory(new File(".\\bin"));
 		
 
 		
@@ -56,7 +57,7 @@ public class CrearProcesoVocales {
 			InputStream is = p.getInputStream();
 			InputStreamReader isr = new InputStreamReader(is,"UTF-8");
 			BufferedReader br = new BufferedReader(isr);
-			String linea = null;
+		//	String linea = null;
 			System.out.println(br.readLine());
 
 			
@@ -72,7 +73,6 @@ public class CrearProcesoVocales {
 	//El único método adicional incluido es el que permite referirse y usar
 	//el proceso creado fuera de la clase.
 	public Process getP() {
-		CrearProcesoVocales crearProcesoVocales;
 		return p;
 	}
 	

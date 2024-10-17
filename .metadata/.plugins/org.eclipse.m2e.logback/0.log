@@ -21,4 +21,46 @@
 2024-10-10 10:18:38,357 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2024-10-11 10:21:04,452 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2024-10-14 08:24:01,797 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+<<<<<<< HEAD
 2024-10-17 10:23:50,348 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+=======
+2024-10-14 19:19:30,609 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-10-14 19:20:04,141 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-10-14 19:20:56,049 [Worker-2: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-10-14 19:20:56,657 [Worker-2: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/fish/payara/server/internal/ejb/ejb-http-remoting/6.2024.8/ejb-http-remoting-6.2024.8.pom
+2024-10-14 19:20:56,828 [Worker-2: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 0,00 sec, update config takes 0,00 sec 
+2024-10-14 19:20:56,830 [Worker-2: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-10-14 19:20:57,147 [Worker-2: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/fish/payara/server/internal/admingui/admingui/6.2024.8/admingui-6.2024.8.pom
+2024-10-14 19:20:57,187 [Worker-2: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 2 poms: local refresh takes 0,00 sec, refresh facades takes 0,00 sec, update config takes 0,00 sec 
+2024-10-14 19:20:59,277 [Worker-14: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: AEMETSAX:AEMETSAX:0.0.1-SNAPSHOT @ E:\2DAM\AD\EclipseAD\AEMETSAX\pom.xml.
+2024-10-14 19:20:59,551 [Worker-14: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-10-14 19:20:59,552 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\2DAM\AD\EclipseAD\AEMETSAX\src\main\resources
+2024-10-14 19:20:59,557 [Worker-14: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-10-14 19:20:59,557 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\2DAM\AD\EclipseAD\AEMETSAX\src\test\resources
+2024-10-14 19:20:59,933 [Worker-28: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: AEMETSAXBUENO:AEMETSAXBUENO:0.0.1-SNAPSHOT @ E:\2DAM\AD\EclipseAD\AEMETSAXBUENO\pom.xml.
+2024-10-14 19:20:59,983 [Worker-28: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-10-14 19:20:59,983 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\2DAM\AD\EclipseAD\AEMETSAXBUENO\src\main\resources
+2024-10-14 19:20:59,985 [Worker-28: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-10-14 19:20:59,986 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\2DAM\AD\EclipseAD\AEMETSAXBUENO\src\test\resources
+2024-10-14 19:21:00,094 [Worker-28: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: MarvelJSON:MarvelJSON:0.0.1-SNAPSHOT @ E:\2DAM\AD\EclipseAD\MarvelJSON\pom.xml.
+2024-10-14 19:21:00,301 [Worker-28: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-10-14 19:21:00,301 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\2DAM\AD\EclipseAD\MarvelJSON\src\main\resources
+2024-10-14 19:21:00,304 [Worker-28: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-10-14 19:21:00,304 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\2DAM\AD\EclipseAD\MarvelJSON\src\test\resources
+2024-10-14 19:21:00,713 [Worker-5: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: OpenWeatherJSON:OpenWeatherJSON:0.0.1-SNAPSHOT @ E:\2DAM\AD\EclipseAD\OpenWeatherJSON\pom.xml.
+2024-10-14 19:21:00,790 [Worker-5: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-10-14 19:21:00,791 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\2DAM\AD\EclipseAD\OpenWeatherJSON\src\main\resources
+2024-10-14 19:21:00,792 [Worker-5: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-10-14 19:21:00,793 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\2DAM\AD\EclipseAD\OpenWeatherJSON\src\test\resources
+2024-10-14 19:21:00,895 [Worker-5: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: OpenWeatherWebBueno:OpenWeatherWebBueno:0.0.1-SNAPSHOT @ E:\2DAM\AD\EclipseAD\OpenWeatherWebBueno\pom.xml.
+2024-10-14 19:21:00,937 [Worker-5: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-10-14 19:21:00,938 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\2DAM\AD\EclipseAD\OpenWeatherWebBueno\src\main\resources
+2024-10-14 19:21:00,939 [Worker-5: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-10-14 19:21:00,940 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\2DAM\AD\EclipseAD\OpenWeatherWebBueno\src\test\resources
+2024-10-14 19:21:01,007 [Worker-5: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: caravanJSON:caravanJSON:0.0.1-SNAPSHOT @ E:\2DAM\AD\EclipseAD\caravanJSON\pom.xml.
+2024-10-14 19:21:01,053 [Worker-5: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/MarvelJSON: MarvelJSON:MarvelJSON:0.0.1-SNAPSHOT with classifier  to /MarvelJSON/target/classes
+2024-10-14 19:21:01,080 [Worker-5: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-10-14 19:21:01,080 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\2DAM\AD\EclipseAD\caravanJSON\src\main\resources
+2024-10-14 19:21:01,082 [Worker-5: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-10-14 19:21:01,083 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\2DAM\AD\EclipseAD\caravanJSON\src\test\resources
+>>>>>>> 26fe7125ee5173e666143ae4d120c80471278a82
