@@ -64,3 +64,5 @@
 2024-10-14 19:21:01,082 [Worker-5: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2024-10-14 19:21:01,083 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\2DAM\AD\EclipseAD\caravanJSON\src\test\resources
 >>>>>>> 26fe7125ee5173e666143ae4d120c80471278a82
+2024-10-20 14:46:24,190 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-10-20 16:10:15,732 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
