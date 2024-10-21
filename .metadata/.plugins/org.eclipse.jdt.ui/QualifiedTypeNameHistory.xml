@@ -17,16 +17,17 @@
     <fullyQualifiedTypeName name="psp_2024.ZZZ.PRUEBAS.practica_cmd.Auxiliar"/>
     <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
-    <fullyQualifiedTypeName name="java.lang.Process"/>
     <fullyQualifiedTypeName name="psp_2024.ZZZ.PRUEBAS.prueba_vocales.CrearProcesoVocales"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.lang.ProcessBuilder.Redirect"/>
-    <fullyQualifiedTypeName name="java.lang.ProcessBuilder"/>
     <fullyQualifiedTypeName name="psp_2024.ZZZ.PRUEBAS.ejemploHilos.Hilo1"/>
     <fullyQualifiedTypeName name="psp_2024.ZZZ.PRUEBAS.ejemploHilos.Hilo1R"/>
     <fullyQualifiedTypeName name="java.lang.Runnable"/>
     <fullyQualifiedTypeName name="java.awt.desktop.ScreenSleepEvent"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="java.lang.ProcessBuilder"/>
+    <fullyQualifiedTypeName name="java.lang.Process"/>
+    <fullyQualifiedTypeName name="ejercicio2.CrearProcesoCadenas"/>
 </qualifiedTypeNameHistroy>
