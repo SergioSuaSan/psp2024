@@ -12,7 +12,7 @@ class HiloJoin extends Thread {
     for(int i=1; i<= n; i++)  {
        System.out.println(getName() + ": " + i);
        try {
-           sleep(500); 
+           sleep(1000); 
        } catch (InterruptedException ignore) {}    	   
     }
 	System.out.println("Fin Bucle "+getName());
