@@ -52,7 +52,7 @@ public class TresProcesos {
 
 	private static void lanzarcomando() {
 		//Creamos un proceso que abre la consola de comandos utilizando un ProccesBuilder.
-		ProcessBuilder pb = new ProcessBuilder("CMD", "/C", "nslookup   www.elpais.com");
+		ProcessBuilder pb = new ProcessBuilder("CMD", "/C", "nslookup www.elpais.com");
 		//Instanciamos el proceso
 		Process p;
 		
