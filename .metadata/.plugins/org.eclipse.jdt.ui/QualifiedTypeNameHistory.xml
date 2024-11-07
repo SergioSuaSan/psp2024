@@ -26,8 +26,9 @@
     <fullyQualifiedTypeName name="psp_2024.ZZZ.PRUEBAS.ejemploHilos.Hilo1R"/>
     <fullyQualifiedTypeName name="java.lang.Runnable"/>
     <fullyQualifiedTypeName name="java.awt.desktop.ScreenSleepEvent"/>
-    <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="java.lang.ProcessBuilder"/>
     <fullyQualifiedTypeName name="java.lang.Process"/>
     <fullyQualifiedTypeName name="ejercicio2.CrearProcesoCadenas"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="curso276.threads_168_178.SolicitaSuspender"/>
 </qualifiedTypeNameHistroy>

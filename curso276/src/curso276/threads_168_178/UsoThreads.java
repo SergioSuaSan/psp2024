@@ -35,7 +35,7 @@ class PelotaHilos implements Runnable {
 	private Pelota pelota;  //aquí se almacenará la pelota
 	private Component componente; //aquí se almacenará la lámina
 	
-	public void run() {
+	public void  run() {
 		
 		System.out.println("Estado de detención del hilo al comenzar: " + Thread.currentThread().isInterrupted());
 	//	for (int i = 0; i <= 1000; i++) {
@@ -165,8 +165,16 @@ class MarcoRebote extends JFrame {
 
 		ponerBoton(laminaBotones, "Dale!", new ActionListener() {
 
-			public void actionPerformed(ActionEvent evento) {
+			public synchronized void actionPerformed(ActionEvent evento) {
+				
 				comienza_el_juego();
+				try {
+					t.wait();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
 			}
 
 		});
@@ -180,15 +188,54 @@ class MarcoRebote extends JFrame {
 		
 		//En vídeo 169 se añade la función de detener a que corresponde
 		//este botón y el método detener() y demás asociado.
+		/*
 		ponerBoton(laminaBotones, "Detener", new ActionListener() {
 
 			public void actionPerformed(ActionEvent evento) {
 				detener();
 			}
 		});
+		*/
+		ponerBoton(laminaBotones, "Suspender", new ActionListener() {
+
+			public void actionPerformed(ActionEvent evento) {
+				suspender();
+			}
+		});
+		ponerBoton(laminaBotones, "Reanudar", new ActionListener() {
+
+			public void actionPerformed(ActionEvent evento) {
+				reanudar();
+			}
+		});
 
 		add(laminaBotones, BorderLayout.SOUTH);
 
+	}
+
+	protected void suspender() {
+		// TODO Auto-generated method stub
+		sosu = new SolicitaSuspender();
+		t.interrupt();
+		sosu.set(t.isInterrupted());
+		
+		
+	}
+
+	protected void reanudar() {
+		// TODO Auto-generated method stub
+		if ( Thread.currentThread().isInterrupted()) {	
+			try {
+				Thread.interrupted();
+				sosu.esperandoParaReanudar();
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		
+			
+		}
+		
 	}
 
 	// Se ponen botones
@@ -204,7 +251,7 @@ class MarcoRebote extends JFrame {
 	// Añade pelota y la mueve 1000 veces
 	
 	Thread t;  //variable común a comienza_el_juego() y detener()
-	public void comienza_el_juego() {
+	public synchronized void comienza_el_juego() {
 
 		Pelota pelota = new Pelota();
 
@@ -231,6 +278,7 @@ class MarcoRebote extends JFrame {
 		t = new Thread(r);
 		t.start();
 		
+		
 
 	}
 
@@ -242,4 +290,5 @@ class MarcoRebote extends JFrame {
 	}
 
 	private LaminaPelota lamina;
+	private SolicitaSuspender sosu;
 }

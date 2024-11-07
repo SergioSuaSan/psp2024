@@ -1,4 +1,4 @@
-package psp_2024.hilos.suspension2;
+package curso276.threads_168_178;
 
 // Clase que implementa dos métodos sincronizados que permiten suspender y 
 // reanudar la ejecución de un programa que se ejecuta en otra clase
