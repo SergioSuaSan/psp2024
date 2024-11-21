@@ -31,4 +31,5 @@
     <fullyQualifiedTypeName name="ejercicio2.CrearProcesoCadenas"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="curso276.threads_168_178.SolicitaSuspender"/>
+    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
 </qualifiedTypeNameHistroy>
