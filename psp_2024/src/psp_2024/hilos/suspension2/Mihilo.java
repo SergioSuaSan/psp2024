@@ -1,4 +1,4 @@
-package psp_2024.hilos.suspension2;
+ 	package psp_2024.hilos.suspension2;
 
 import java.util.Scanner;
 
@@ -116,7 +116,8 @@ class Mihilo extends Thread {
 		//mh.Reanuda();
 
 		// Detención del hilo
-		mh.pararHilo();
+		//mh.pararHilo();
+		mh.interrupt();
 		sc.close();
 
 		

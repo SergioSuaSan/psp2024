@@ -1,5 +1,7 @@
 package psp_2024.hilos.EJEMPLOS_LIBRO_TEXTO.bloqueos.ejemplo_1_con_2_hilos;
 
+import java.util.Iterator;
+
 /*
  * Este archivo forma pareja con el de BloqueoHilosInicial, y sirven mediante sus clases 
  * para ilustrar un caso típico en que se necesita un bloqueo en la ejecución de diferentes
@@ -42,10 +44,27 @@ class HiloCadena extends Thread {
 	}
 	public void run() {
 		  //////////////////INICIO DEL BLOQUE SINCRONIZADO
-
-		//INSERTAR INSTRUCCIONES PARA LA VISUALIZACIÓN DEL MENSAJE DEL OBJETO
-		//COMPARTIDO DE MANERA LOS HILOS QUE LO ACCEDAN VAYAN ALTERNÁNDOSE
-		//(WAIT - NOTIFY)
+				//INSERTAR INSTRUCCIONES PARA LA VISUALIZACIÓN DEL MENSAJE DEL OBJETO
+				//COMPARTIDO DE MANERA LOS HILOS QUE LO ACCEDAN VAYAN ALTERNÁNDOSE
+				//(WAIT - NOTIFY)
+			synchronized (objeto) {
+				for (int j = 0; j<10; j++) {
+					objeto.PintaCadena(cad);
+					/*
+					try {
+						sleep(300);
+					} catch (InterruptedException e) {
+						// TODO: handle exception
+					}
+					*/
+					objeto.notify();
+					try {
+						objeto.wait();
+					} catch (InterruptedException e) {
+						// TODO: handle exception
+					}
+				}
+			}
 		
 		  //////////////////FIN DEL BLOQUE SINCRONIZADO
 		  System.out.print("\n"+cad + " finalizado");
@@ -64,6 +83,12 @@ public class BloqueoHilosParaAlumnos {
 	public static void main(String[] args) {
 
 		//INSTANCIACIÓN DE OBJETO COMPARTIDO, INSTANCIACIÓN E INICIALIZACIÓN DE HILOS 
+		ObjetoCompartido oc = new ObjetoCompartido();
+		HiloCadena a = new HiloCadena(oc, " A "	);
+		HiloCadena b = new HiloCadena(oc, " B "	);
+		
+		a.start();
+		b.start();
 		
 	}
 }//BloqueoHilos
