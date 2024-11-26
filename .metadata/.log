@@ -2943,3 +2943,42 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.debug.core 2 0 2024-11-25 09:48:27.508
+!MESSAGE Error writing to 'Input Stream Monitor for PID 11628 ConstruyeCadena': Se está cerrando la canalización
+!STACK 0
+java.io.IOException: Se está cerrando la canalización
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:367)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+	at java.base/java.io.BufferedOutputStream.implFlush(BufferedOutputStream.java:252)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:240)
+	at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:184)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.write(InputStreamMonitor.java:181)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.debug.core 2 0 2024-11-25 09:49:40.753
+!MESSAGE Error writing to 'Input Stream Monitor for PID 21940 ConstruyeCadena': Se está cerrando la canalización
+!STACK 0
+java.io.IOException: Se está cerrando la canalización
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:367)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+	at java.base/java.io.BufferedOutputStream.implFlush(BufferedOutputStream.java:252)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:240)
+	at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:184)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.write(InputStreamMonitor.java:181)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.debug.core 2 0 2024-11-25 09:52:32.926
+!MESSAGE Error writing to 'Input Stream Monitor for PID 11552 ConstruyeCadena': Se está cerrando la canalización
+!STACK 0
+java.io.IOException: Se está cerrando la canalización
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:367)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+	at java.base/java.io.BufferedOutputStream.implFlush(BufferedOutputStream.java:252)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:240)
+	at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:184)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.write(InputStreamMonitor.java:181)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
