@@ -2,6 +2,7 @@ package ejercicio1;
 
 public class CadenaLetras {
 	private String cadena;
+
 	public CadenaLetras() {
 		this.cadena = "";
 	}
@@ -13,26 +14,30 @@ public class CadenaLetras {
 				 this.cadena = "a";
 				
 			 } else {
-				
+				if (!cadena.endsWith(String.valueOf(letra)))
 				 sigueCadena();
-				 System.out.println("prueba");
+				
 			 }
 			 //Una vez hecho, le digo al hilo que espere para que pueda cogerlo el siguiente
 			 //Y lo notifico
 				  try {
-					wait();
+					 
+					Thread.sleep(10); 
+					//wait();//Si primero pones el wait, los dos se quedan esperando y nunca funciona
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
+			 	
 				  notify();
+				  
 		 }
 			 
 		
 	
 	public void sigueCadena() {
 		//Añado el caracter que vale 1 + que el último carácter de la cadena
-		cadena =cadena + cadena.charAt(cadena.length()-1);
+		cadena = cadena + (char)( cadena.charAt(cadena.length()-1) +1); //CONVERTIRLO A CHAR Y SUMARLE 1	
 		 
 		
 	}
