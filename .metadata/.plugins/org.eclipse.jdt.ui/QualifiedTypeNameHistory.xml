@@ -1,45 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="leyendo.Acceso_Fichero.Leer_Fichero"/>
-    <fullyQualifiedTypeName name="escribiendo.Escribiendo"/>
-    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
-    <fullyQualifiedTypeName name="java.io.FileReader"/>
-    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
-    <fullyQualifiedTypeName name="java.io.OutputStreamWriter"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
-    <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
-    <fullyQualifiedTypeName name="psp_2024.ZZZ.PRUEBAS.practica_cmd.MetodosAuxiliares"/>
-    <fullyQualifiedTypeName name="java.lang.OutOfMemoryError"/>
-    <fullyQualifiedTypeName name="java.io.OutputStream"/>
-    <fullyQualifiedTypeName name="psp_2024.ZZZ.PRUEBAS.practica_cmd.Auxiliar"/>
-    <fullyQualifiedTypeName name="java.io.InputStream"/>
-    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
-    <fullyQualifiedTypeName name="psp_2024.ZZZ.PRUEBAS.prueba_vocales.CrearProcesoVocales"/>
-    <fullyQualifiedTypeName name="java.io.FileWriter"/>
-    <fullyQualifiedTypeName name="java.io.File"/>
-    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
-    <fullyQualifiedTypeName name="java.lang.ProcessBuilder.Redirect"/>
-    <fullyQualifiedTypeName name="psp_2024.ZZZ.PRUEBAS.ejemploHilos.Hilo1"/>
-    <fullyQualifiedTypeName name="psp_2024.ZZZ.PRUEBAS.ejemploHilos.Hilo1R"/>
-    <fullyQualifiedTypeName name="java.lang.Runnable"/>
-    <fullyQualifiedTypeName name="java.awt.desktop.ScreenSleepEvent"/>
-    <fullyQualifiedTypeName name="java.lang.ProcessBuilder"/>
-    <fullyQualifiedTypeName name="java.lang.Process"/>
-    <fullyQualifiedTypeName name="ejercicio2.CrearProcesoCadenas"/>
-    <fullyQualifiedTypeName name="curso276.threads_168_178.SolicitaSuspender"/>
-    <fullyQualifiedTypeName name="psp_2024.ZZZ.PRUEBAS.ejemploHilos.HiloTicR"/>
-    <fullyQualifiedTypeName name="psp_2024.ZZZ.PRUEBAS.ejemploHilos.HiloTacR"/>
-    <fullyQualifiedTypeName name="java.lang.Thread"/>
-    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
-<<<<<<< HEAD
-    <fullyQualifiedTypeName name="ejercicio1.CadenaLetras"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="ejercicio1.MontaCadena"/>
-    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
-=======
-    <fullyQualifiedTypeName name="psp_2024.hilos.EJEMPLOS_LIBRO_TEXTO.bloqueos.ejemplo_1_con_2_hilos.ObjetoCompartido"/>
-    <fullyQualifiedTypeName name="psp_2024.hilos.EJEMPLOS_LIBRO_TEXTO.bloqueos.ejemplo_1_con_2_hilos.HiloCadena"/>
->>>>>>> cdac157966d2b9e403cea1c4763899723c7558aa
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
