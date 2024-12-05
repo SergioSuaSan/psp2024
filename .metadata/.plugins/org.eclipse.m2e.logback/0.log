@@ -793,3 +793,4 @@ org.eclipse.core.runtime.CoreException: Could not read maven project
 2024-11-24 17:08:42,384 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 >>>>>>> cdac157966d2b9e403cea1c4763899723c7558aa
 2024-11-28 10:17:37,748 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-12-05 10:11:58,153 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
