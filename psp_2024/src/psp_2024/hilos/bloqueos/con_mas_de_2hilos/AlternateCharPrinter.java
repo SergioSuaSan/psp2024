@@ -11,7 +11,7 @@ public class AlternateCharPrinter {
     }
 
     public static void main(String[] args) {
-        createAndStartThreads(8);
+        createAndStartThreads(4);
     }
 
 }
@@ -34,12 +34,14 @@ class AlternateCharRunner implements Runnable {
     	// System.out.println(runnerCount);
     	
         while (true) {
+        	System.out.println(Thread.currentThread().getName()+ " Fuerrrra");
             synchronized (lock) {
+            	System.out.println(Thread.currentThread().getName()+ " Dentrrrrro");
             	
-				
+				/*
 				  System.out.println(); System.out.println("Hay " + Thread.activeCount() +
 				  " hilos activos"); System.out.println();
-				 
+				 */
             	try {
 					Thread.sleep(100);
 				} catch (InterruptedException e) {
@@ -66,7 +68,8 @@ class AlternateCharRunner implements Runnable {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    System.out.println(runnerCount);
+                    
+                  //  System.out.println(runnerCount);
                     
                     /*	Thread.sleep(1000);
                     System.out.println();
@@ -77,9 +80,11 @@ class AlternateCharRunner implements Runnable {
                 }
                System.out.println(AlternateCharPrinter.ch++);
                //System.out.println(runnerCount);
+               
                 if (AlternateCharPrinter.ch == (65 + runnerCount)) {
                     AlternateCharPrinter.ch = 65;
                 }
+                
                 lock.notifyAll();
             }
         }

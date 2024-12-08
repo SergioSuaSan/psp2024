@@ -16,25 +16,17 @@ public class DaemondThread implements Runnable {
 
 		System.out.println("Comienza run()");
 
-		try {
-
 			while (true) {
 
 				try {
 					Thread.sleep(500);
 
-				} catch (InterruptedException e) {
-				}
-				;
+				} catch (InterruptedException e) {}
 
-				System.out.println("run() ha despertado");
+				System.out.println("run() está despierto");
 
 			}
 
-		} finally {
-
-			System.out.println("Termina run()");
-		}
 
 	}
 
@@ -45,9 +37,8 @@ public class DaemondThread implements Runnable {
 		t.start();
 		try {
 			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-		}
-		;
+		} catch (InterruptedException e) {}
+		
 		System.out.println("Termina main()");
 	}
 }
