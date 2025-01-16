@@ -57,7 +57,7 @@ class Cola {
 
     //////////////////////////// INICIO MÉTODO SINCRONIZADO
     public synchronized void anadir(int numero) {
-        while (cola.size() == capacidad) {
+        while (cola.size() >= capacidad) {
         	System.out.println(cola.size() + "Es el numero de la cola en añadir");
         	
             try {
