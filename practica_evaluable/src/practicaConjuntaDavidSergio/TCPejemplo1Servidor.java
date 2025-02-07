@@ -2,23 +2,30 @@ package practicaConjuntaDavidSergio;
 
 import java.io.*;
 import java.net.*;
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class TCPejemplo1Servidor {
 
 	public static void main(String[] args) throws IOException {
 
+		System.out.println("Indica cuántos clientes quieres:");
+		Scanner teclado = new Scanner(System.in);
+		int bucle = teclado.nextInt();
+	
+		
 		
 		int numeroPuerto = 6000;
 		ServerSocket servidor = new ServerSocket(numeroPuerto);
 		System.out.println("Se está esperando al cliente");
 		
-		System.out.println("Cliente 1");
-		Socket cliente1 = servidor.accept();
-		manejarCliente(cliente1);
-		System.out.println("Cliente 2");
-		Socket cliente2 = servidor.accept();
-		manejarCliente(cliente2);
+		for (int i = 0; i < bucle; i++) {
+			System.out.println("Cliente "+ (i+1));
+			Socket cliente = servidor.accept();
+			manejarCliente(cliente);
+			
+		}
+		
 		
 		
 		
