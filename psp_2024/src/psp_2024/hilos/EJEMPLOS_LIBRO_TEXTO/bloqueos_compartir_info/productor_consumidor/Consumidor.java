@@ -1,4 +1,4 @@
-package psp_2024.hilos.EJEMPLOS_LIBRO_TEXTO.bloqueos_compartir_info.productor_consumidor.pc3;
+package psp_2024.hilos.EJEMPLOS_LIBRO_TEXTO.bloqueos_compartir_info.productor_consumidor;
 
 /*
  * Este paquete forma unidad de estudio con productorConsumidor1 y productorConsumidor2.
@@ -27,32 +27,25 @@ package psp_2024.hilos.EJEMPLOS_LIBRO_TEXTO.bloqueos_compartir_info.productor_co
  */
 
 /*
- * El productor genera números de 0 a 4 en un bucle for, y los pone en el objeto Cola mediante
- * el método put() de Cola, se hace un pausa con sleep() -para que pueda comprobarse mejor la 
- * ausencia/presencia de sincronización-, durante este tiempo el hilo esta en el estado Not 
- * Runnable (no ejecutable).
+ * La clase Consumidor es muy similar a la clase Productor, solo que en Jugar de poner un
+ * número en el objeto Cola lo recoge llamando al método get(). En este caso no se ha puesto 
+ * pausa, con esto hacemos que el consumidor sea más rápido que el productor.
  */
 
-
-public class Productor extends Thread {
+public class Consumidor extends Thread {
     private Cola cola;
     private int n;
 
-    public Productor(Cola c/*, int n*/) {
+    public Consumidor(Cola c/*, int n*/) {
         cola = c;
-        //this.n = n;
+        this.n = n;
     }
 
     public void run() {
+        int valor = 0;
         for (int i = 0; i < 5; i++) {
-            cola.put(i); //pone el n�mero
-        
-            try {
-                sleep(100);
-            } catch (InterruptedException e) { }			
-			
+            valor = cola.get(); //recoge el n�mero
+          
         }
     }
 }
-
-

@@ -1,4 +1,4 @@
-package psp_2024.hilos.EJEMPLOS_LIBRO_TEXTO.bloqueos_compartir_info.productor_consumidor.pc3;
+package psp_2024.hilos.EJEMPLOS_LIBRO_TEXTO.bloqueos_compartir_info.productor_consumidor;
 
 /*
  * Este paquete forma unidad de estudio con productorConsumidor1 y productorConsumidor2.

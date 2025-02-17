@@ -5,6 +5,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="psp_2024/hilos/EJEMPLOS_LIBRO_TEXTO/bloqueos_compartir_info/productor_consumidor/pc3/" kind="src" path="src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,5 +1,6 @@
 package psp_2024.ZZZ.PRUEBAS.redes.practicaClase;
 
+import java.io.*; 
 import java.net.*;   
 public class MCcliente { 
   public static void main(String args[]) throws Exception { 
@@ -7,7 +8,10 @@ public class MCcliente {
     int Puerto = 12345;//Puerto multicast
     MulticastSocket ms = new MulticastSocket(Puerto);  
    
-    InetAddress grupo = InetAddress.getByName("225.0.0.1");//Grupo
+    ms.setNetworkInterface(NetworkInterface.getByInetAddress(InetAddress.getByName("172.19.185.1")));
+    
+   // InetAddress grupo = InetAddress.getByName("225.0.0.1");//Grupo
+    InetAddress grupo = InetAddress.getByName("224.0.0.1");
     
     //Nos unimos al grupo
    // ms.joinGroup (grupo );
