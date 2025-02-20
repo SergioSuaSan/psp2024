@@ -1,4 +1,4 @@
-package udpSocket;
+package psp_2024.redes.EJEMPLOS_LIBRO_TEXTO.udpSocket;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
