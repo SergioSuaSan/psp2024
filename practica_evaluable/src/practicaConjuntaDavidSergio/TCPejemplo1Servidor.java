@@ -12,9 +12,7 @@ public class TCPejemplo1Servidor {
 		System.out.println("Indica cuántos clientes quieres:");
 		Scanner teclado = new Scanner(System.in);
 		int bucle = teclado.nextInt();
-	
-		
-		
+
 		int numeroPuerto = 6000;
 		ServerSocket servidor = new ServerSocket(numeroPuerto);
 		System.out.println("Se está esperando al cliente");
@@ -22,20 +20,9 @@ public class TCPejemplo1Servidor {
 		for (int i = 0; i < bucle; i++) {
 			System.out.println("Cliente "+ (i+1));
 			Socket cliente = servidor.accept();
-			manejarCliente(cliente);
-			
+			manejarCliente(cliente);	
 		}
-		
-		
-		
-		
-		
-		
-
 		servidor.close();
-		
-		
-		
 	}
 	
 	public static void manejarCliente(Socket cliente ) throws IOException {
